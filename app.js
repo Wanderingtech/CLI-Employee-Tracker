@@ -3,15 +3,15 @@ var inquirer = require("inquirer");
 require("console.table");
 
 var connection = mysql.createConnection({
-    host: "local host",
+    host: "localhost",
     user: "root",
     password: "Stronghand12",
     database: "employee"
 })
-connection.connect(function () {
+connection.connect(function(error){
+    if(error)throw error;
     console.log("mysql connection established");
     displayMenu();
-
 })
 function displayMenu() {
     inquirer.prompt([
@@ -24,10 +24,14 @@ function displayMenu() {
     ]).then(function (resp) {
         switch (resp.userEntry) {
             case "view department":
-                viewDepartment()
-                break
+                viewDepartment();
+                break;
             case "view employee":
+                viewEmployee();
+                break;
             case "view employee roles":
+                viewEmployeeRole();
+                break;
             case "add department":
             case "add employee":
             case "add employee role":
@@ -35,5 +39,26 @@ function displayMenu() {
                 connection.end();
                 process.exit(0)
         }
+    })
+}
+function viewDepartment(){
+    connection.query("select * from department;", function(error,data){
+        if(error)throw error
+        console.table(data)
+        displayMenu()
+    })
+}
+function viewEmployee(){
+    connection.query("select * from employee;", function(error,data){
+        if(error)throw error
+        console.table(data)
+        displayMenu()
+    })
+}
+function viewEmployeeRole(){
+    connection.query("select * from employee_role;", function(error,data){
+        if(error)throw error
+        console.table(data)
+        displayMenu()
     })
 }
