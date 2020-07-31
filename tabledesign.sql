@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS Employee;
 CREATE DATABASE Employee;
 USE Employee;
 CREATE table Department(id int auto_increment, name varchar(30), primary key(id));
