@@ -1,0 +1,14 @@
+USE employee;
+insert into department(name) values("Marketing");
+insert into department(name) values("HR");
+select * from department;
+insert into employee_role(title, salary, department_id) values("Manager", 75000, 1);
+insert into employee_role(title, salary, department_id) values("Manager", 75000, 2);
+insert into employee_role(title, salary, department_id) values("sales rep", 75000, 1);
+insert into employee_role(title, salary, department_id) values("assistant", 75000, 2);
+select * from employee_role;
+insert into employee(first_name, last_name, role_id, manager_id) values("Frank", "Sinatra", 1, 0);
+insert into employee(first_name, last_name, role_id, manager_id) values("Fred", "Astair", 2, 0);
+insert into employee(first_name, last_name, role_id, manager_id) values("June", "Carter", 3, 1);
+insert into employee(first_name, last_name, role_id, manager_id) values("Jane", "Austin", 4, 2);
+select * from employee;
