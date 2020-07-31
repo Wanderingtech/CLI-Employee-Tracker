@@ -39,7 +39,7 @@ To organize employee data for easy viewing and manipulation.
 
 ## Contributors
 
-Heather Stolz and tutor
+Heather Stolz and Sangeetha Kaliaperumal(tutor)
 
 ## Future Improvements
 
@@ -50,7 +50,7 @@ I plan on abstracting the js file into multiple task specific js files. While us
 ![image](./assets/employeedb.png)
 ![image](./assets/seedsemployee.png)
 ![image](./assets/employeejs.png)
-
+![video](https://drive.google.com/file/d/1pTK7s2G7lfEBB4xgOsn5d6QiQp7cmNao/view?usp=sharing)
 ## Questions
 
 If you have any questions regarding this project, you can find me at [Wanderingtech](https://github.com/Wanderingtech) 
