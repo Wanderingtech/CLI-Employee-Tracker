@@ -5,7 +5,7 @@ require("console.table");
 var connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Stronghand12",
+    password: null,
     database: "employee"
 })
 connection.connect(function(error){
