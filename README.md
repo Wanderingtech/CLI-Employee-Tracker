@@ -50,7 +50,8 @@ I plan on abstracting the js file into multiple task specific js files. While us
 ![image](./assets/employeedb.png)
 ![image](./assets/seedsemployee.png)
 ![image](./assets/employeejs.png)
-![video](https://drive.google.com/file/d/19zQ0b30gd4nINjJmlQgpjkacJeanh7Lr/view)
+[video-walk-through](https://youtu.be/onT5U9-hKjc)
+
 ## Questions
 
 If you have any questions regarding this project, you can find me at [Wanderingtech](https://github.com/Wanderingtech) 
